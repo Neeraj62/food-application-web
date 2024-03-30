@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* header style */
+
+  header{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 25px;
+    font-weight: 600;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover{
+    color:#ff0054;
+  }
+
+  .container .logo{
+    color:#fca311;
+    font: size 24px;
+  }
+
+    /*hero section*/
+    .hero{
+    background-image: url(tomatoes-5365186.jpg);
+    height: 448px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 0px;
+    margin-bottom: 15px;
+    }
+    .hero h2{
+        font-size: 40px;
+        margin-bottom:10px;
+
+    }
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.search_box{
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.search_box input{
+    width:  70%;
+    padding: 10px;
+    outline: none;
+    border:none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1rem;
+    border: 1px solid #ff0054;
+
+}
+
+.search_box button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius:0px 5px 5px 0px;
+    font-size: 1rem;
+    border: 1px solid #ec1065;
+    background-color:#ff0054;
+    color: white;
+    cursor: pointer;
+}
+
+  .recipes{
+  padding: 50px 0px;
+  background-color: pink;
+
+}
+.recipes h1{
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.recipe_container{
+  width:100%;
+  background-color: yellow;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  column-gap: 10px;
+}
+.recipe_container .recipe_card{
+  background-color: white;
+  margin: 30px 10px;
+border-radius: 10px;
+overflow: hidden;
+
+}
+.recipe_container .recipe_card img{
+  width:100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.recipe_container .recipe_card h2{
+  font-size: 19px;
+  color:#212529;
+  padding: 20px;
+}
+
+.recipe_container .recipe_card p{
+  font-size: 14px;
+  color: #6c757d;
+  padding:15px 20px;
+
+}
+
+.recipe_container .recipe_card a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color:#ff0054;
+  opacity: 0.5;
+  color: white;
+  font-weight: 700;
+  padding: 15px 0px;
+}
